@@ -1,0 +1,53 @@
+.logo 
+{
+    position: fixed;
+    width: 4vw;
+    height: 7vh;
+    padding-top: 5vh;
+    padding-right: 8vw;
+}
+
+/* nama toko*/
+h1 
+{
+    font-family: 'Lobster', cursive;
+    padding-top: 1vh;
+    padding-left: 10vh;
+    font-size: 35px;
+}
+
+ul
+{ 
+    justify-content: center;
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    left: 30vw;
+
+}
+
+ul>li
+{ 
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+ul>li>a
+{
+    color: rgb(6, 6, 6);
+    padding: 35px 5px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 0px 2px;
+    cursor: pointer;
+    
+}
+
+.isi
+{
+    display: flex;
+    justify-content: center;
+}

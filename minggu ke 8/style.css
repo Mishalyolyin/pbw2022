@@ -11,13 +11,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 75px;
 }
 
 nav {
     display: flex;
     background-color: rgb(139, 96, 39);
     width: 100vw;
-    height: 5vh;
+    height: 7vh;
     box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
@@ -28,7 +29,7 @@ ul{
     display: flex;
     list-style-type: none;
     position: relative;
-    left: 84vw;
+    left: 82vw;
 }
 
 ul>li{
@@ -41,4 +42,25 @@ ul>li{
 ul>li>a{
     text-decoration: none;
     color: white;
+    
+}
+
+.home {
+    padding-top: 8px;
+    padding-left: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    
+}
+
+.hobby {
+    padding-top: 8px;
+    padding-left: 29px;
+    font-size: 20px;
+}
+
+.relax {
+    padding-top: 8px;
+    padding-left: 25px;
+    font-size: 20px;
 }
