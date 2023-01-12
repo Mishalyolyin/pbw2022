@@ -18,9 +18,32 @@
 }
 
 body {
+  /* background-color: #a2a2a2; */
+  background-color: #9aacb8;
   font-family: "Open Sans", sans-serif;
   line-height: 1.7;
   color: var(--color-black);
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+.normal {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: black;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
 }
 
 .container {
@@ -32,13 +55,7 @@ body {
   font-size: 4rem;
   font-weight: 700;
   line-height: 1;
-  color: var(--color-primary);
-}
-
-.nyinyut
-{
-  font-weight: 500;
-  font-style: italic;
+  color: #60412b;
 }
 
 .btn {
@@ -49,13 +66,13 @@ body {
   border-radius: 0.3rem;
 }
 .btn--primary {
-  color: var(--color-primary);
-  border: 1px solid var(--color-primary);
+  color: rgb(4, 4, 4);
   transition: all 0.3s;
+  background-color: #dde2e3;
 }
 .btn--primary:hover {
-  color: var(--color-white);
-  background-color: var(--color-primary);
+  color: rgb(255, 255, 255);
+  background-color: #b37c57;
 }
 .btn--submit {
   color: var(--color-black);
@@ -133,9 +150,16 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 8vh;
+  box-shadow: 1px 12px 19px -12px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px 12px 19px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 12px 19px -12px rgba(0,0,0,0.75);
+  top: 0;
+  left: 0;
+  background-color: #b37c57;
+  position: relative;
 }
 .nav--logo {
-  height: 80%;
+  height: 90%;
 }
 .nav--link {
   display: flex;
@@ -144,14 +168,15 @@ body {
   height: 8vh;
 }
 .nav--link_item {
-  color: var(--color-black);
+  color: whitesmoke;
   font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
   margin: 0 1rem;
 }
-.nav--link_item:hover {
-  color: var(--color-primary);
+.nav--link_item:hover,
+.nav--link_item.active {
+  color: #361d0b;
 }
 
 .header {
@@ -160,13 +185,17 @@ body {
   align-items: center;
   height: 90vh;
 }
+
 .header--title {
+  color: #3c455c;
   font-size: 2.5rem;
   font-weight: 300;
   line-height: 1.2;
 }
 .header--subtitle {
-  font-size: 1rem;
+  color: white;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .header--wrapper {
   padding: 1rem;
@@ -176,10 +205,42 @@ body {
   width: 80%;
 }
 
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(galery/MiShA_chi1.png);
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/* #banner h3 {
+  color: white;
+  font-size: 34px;
+
+}
+
+#banner h2 {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  padding: 10px 0;
+}
+
+#banner a {
+  text-decoration: none;
+  color: black;
+}
+
+#banner button:hover {
+  background: var(--color-primary);
+  color: white;
+} */
+
 .carousel--img {
-  padding-top: 5rem;
-  width: 84vw;
-  height: 70vh;
   border-radius: 0.5rem;
   max-width: 100%;
   margin-bottom: 3rem;
@@ -208,15 +269,21 @@ body {
   margin-bottom: 1rem;
 }
 
-
+.about--img:hover {
+  box-shadow: 2px 1px 18px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 2px 1px 18px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 1px 18px 0px rgba(0,0,0,0.75);
+  transition: 0.3s ease;
+}
 
 .newsletter {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  background-color: #9cc1eb;
+  background-color: #dde2e3;
   border-radius: 0.5rem;
   margin-bottom: 3rem;
+  
 }
 .newsletter--detail {
   padding: 4rem;
@@ -249,7 +316,7 @@ body {
 }
 
 .footer {
-  background-color: #eaeaea;
+  background-color: #dde2e3;
   padding: 4rem 0;
 }
 .footer--grid {
@@ -259,7 +326,7 @@ body {
   justify-items: center;
 }
 .footer--logo {
-  width: 90%;
+  width: 80%;
 }
 .footer--list_head {
   font-size: 2rem;
@@ -274,4 +341,527 @@ body {
   text-decoration: underline;
 }
 
-/*# sourceMappingURL=style.css.map */
+#product-1 h2,
+#product-1 h6{
+  font-family: 'Noto Nastaliq Urdu', serif;
+}
+
+#product-1 h2 {
+  font-size: 60px;
+}
+
+#product-1 h6 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+#product-1 span {
+  font-size: 40px;
+  color: #b37c57;
+  font-style: italic;
+}
+
+
+/* end dari index */
+
+/* product */
+
+#product-1 {
+  text-align: center;
+}
+
+#product-1 .pro-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+#product-1 .pro {
+  background-color: #2b637d;
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #a2e6f8;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
+  position: relative;
+}
+#product-1 .pro:hover {
+  box-shadow: 4px 4px 23px 4px rgba(0,0,0,0.79);
+  -webkit-box-shadow: 4px 4px 23px 4px rgba(0,0,0,0.79);
+  -moz-box-shadow: 4px 4px 23px 4px rgba(0,0,0,0.79);
+}
+
+#product-1 .pro img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+#product-1 .pro .des {
+  text-align: start;
+  padding: 10px 0;
+}
+
+#product-1 .pro .des span {
+  color: white;
+  font-size: 13px
+}
+
+#product-1 .pro .des h5 {
+  padding-top: 7px;
+  color: white;
+  font-size: 15px;
+}
+
+#product-1 .pro .des h4 {
+  padding-top: 5px;
+  color: #dde2e3;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#product-1 .pro .cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #3c455c;
+  border-radius: 50px;
+  border: 1px solid #f0c5ea;
+  background-color: #eaeaea;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+#pagination {
+  text-align: center;
+
+}
+
+#pagination a {
+  text-decoration: none;
+  background-color: #12668E;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+}
+
+#pagination a i {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* detai product */
+
+#prodetails {
+  display: flex;
+  margin-top: 20px;
+}
+
+#prodetails .single-pro-image {
+  width: 40%;
+  margin-right: 50px;
+}
+
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+#prodetails .single-prodetails {
+  width: 50%;
+  padding-top: 30px;
+
+}
+
+#prodetails .single-prodetails h6 {
+  font-size: 40px;
+}
+
+#prodetails .single-prodetails h4 {
+  padding: 40px 0 20px 0;
+  font-size: 35px;
+}
+
+#prodetails .single-prodetails h2 {
+  font-size: 27px;
+}
+
+#prodetails .single-prodetails input {
+  width: 50px;
+  height: 47px;
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  background-color: #dde2e3;
+  border: none;
+}
+
+#prodetails .single-prodetails input:focus{
+  outline: none;
+  
+}
+
+#prodetails .single-prodetails button {
+  background: #dde2e3;
+  color: rgb(3, 3, 3);
+}
+
+#prodetails .single-prodetails span {
+  line-height: 25px;
+  font-size: 20px;
+}
+
+/* end dari product */
+
+
+/* Gallery */
+
+#banner-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(galery/Misha-action-figure-collection.jpg);
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner-1 h3 {
+  color: white;
+  font-size: 34px;
+
+}
+
+#banner-1 h2 {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  padding: 10px 0;
+}
+
+
+#banner-1 a {
+  text-decoration: none;
+  color: black;
+}
+
+#banner-1 button:hover {
+  background: #b37c57;
+  color: white;
+}
+
+#banner-1:hover {
+  box-shadow: 2px 3px 66px -9px rgba(0,0,0,0.63);
+  -webkit-box-shadow: 2px 3px 66px -9px rgba(0,0,0,0.63);
+  -moz-box-shadow: 2px 3px 66px -9px rgba(0,0,0,0.63);
+  transition: 0.2s ease;
+}
+
+#banner-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(galery/comis-2.jpeg);
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner-2 h3 {
+  color: white;
+  font-size: 34px;
+
+}
+
+#banner-2 h2 {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  padding: 10px 0;
+}
+
+#banner-2 a {
+  text-decoration: none;
+  color: black;
+}
+
+#banner-2 button:hover {
+  background: #b37c57;
+  color: white;
+}
+
+#banner-2:hover {
+  box-shadow: 2px 3px 66px -9px rgba(0,0,0,0.63);
+  -webkit-box-shadow: 2px 3px 66px -9px rgba(0,0,0,0.63);
+  -moz-box-shadow: 2px 3px 66px -9px rgba(0,0,0,0.63);
+  transition: 0.2s ease;
+}
+
+#banner-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(galery/cake-shop.jpg);
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner-3 h3 {
+  color: white;
+  font-size: 34px;
+
+}
+
+#banner-3 h2 {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  padding: 10px 0;
+}
+
+#banner-3 a {
+  text-decoration: none;
+  color: black;
+}
+
+#banner-3 button:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+#banner-3:hover {
+  box-shadow: 2px 3px 66px -9px rgba(0,0,0,0.63);
+  -webkit-box-shadow: 2px 3px 66px -9px rgba(0,0,0,0.63);
+  -moz-box-shadow: 2px 3px 66px -9px rgba(0,0,0,0.63);
+  transition: 0.2s ease;
+}
+
+#product-1 h3 {
+  font-size: 55px;
+  font-family: 'Noto Nastaliq Urdu', serif;
+  color: #3c455c;
+}
+
+/* end galery */
+
+/* about */
+
+#banner-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(galery/toko-kue-aeshtetic-2.jpg);
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner-about h3 {
+  color: white;
+  font-size: 34px;
+
+}
+
+#banner-about h2 {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  padding: 10px 0;
+}
+
+#banner-about a {
+  text-decoration: none;
+  color: black;
+}
+
+#banner-about button:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+#banner-about:hover {
+  box-shadow: 2px 3px 66px -9px rgba(0,0,0,0.63);
+  -webkit-box-shadow: 2px 3px 66px -9px rgba(0,0,0,0.63);
+  -moz-box-shadow: 2px 3px 66px -9px rgba(0,0,0,0.63);
+  transition: 0.2s ease;
+}
+
+#about-head {
+  display: flex;
+  align-items: center;
+
+}
+
+#about-head img {
+  width: 50%;
+  height: auto;
+}
+
+#about-head div {
+  padding-left: 40px;
+
+}
+
+#about-head h2 {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* end of about */
+
+/* cart */
+
+#cart table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+  
+}
+
+#cart table img {
+  width: 70px;
+
+}
+
+#cart table td a i {
+  color: white;
+}
+
+#cart table td a i:hover {
+  color: #99def1;
+}
+
+#cart table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+  color: white;
+}
+
+#cart table td:nth-child(2) {
+  width: 150px;
+  text-align: center;
+  color: white;
+}
+
+#cart table td:nth-child(3) {
+  width: 250px;
+  text-align: center;
+  color: white;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+  width: 150px;
+  text-align: center;
+  color: white;
+}
+
+#cart table td:nth-child(5) input {
+  width: 70px;
+  padding: 10px 5px 10px 15px;
+}
+
+#cart table thead {
+  border: 1px solid #ffffff;
+  border-left: none;
+  border-right: none;
+}
+
+#cart table thead td {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 18px 0;
+  
+}
+
+#cart table tbody tr td {
+  padding-top: 15px;
+}
+
+#cart table tbody td {
+  font-size: 13px;
+
+}
+
+#cart-add {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+#subtotal {
+  width: 50%;
+  margin-bottom: 30px;
+  border: 1px solid #ffffff;
+  padding: 30px;
+  color: white;
+  
+}
+
+#subtotal table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#subtotal table td {
+  width: 50%;
+  border: 1px solid white;
+  padding: 10px;
+  font-size: 13px;
+
+}
+
+#subtotal h3 {
+  padding-bottom: 15px;
+}
+
+#subtotal button {
+  padding: 12px 20px;
+}
+
+#subtotal button:hover {
+  background-color: #99def1;
+  color: white;
+  transition: 0.2s ease;
+}
+
+/* thank You */
+
+#thankU {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(galery/thank-u.jpg);
+  width: 100%;
+  height: 150vh;
+  background-size: cover;
+  background-position: center;
+}

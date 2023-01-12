@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cdf32652ab.js" crossorigin="anonymous"></script>
+    <title>MiShA~chi</title>
+</head>
+<body>
+
+    <navbar class="nav container">
+        <img src="all/logo.png" alt="logo-dem" class="nav--logo">
+        <nav class="nav--link">
+            <a href="index.html" class="nav--link_item">Home</a>
+            <a href="Gallery.html" class="nav--link_item">Gallery</a>
+            <a href="product.html" class="nav--link_item">Products</a>
+            <a href="about.html" class="nav--link_item">About</a>
+            <a href="cart.html" class="nav--link_item"><i class="fa-solid fa-bag-shopping"></i></a>
+        </nav>
+    </navbar>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="all/raiden-mei.jpg" width="100%" id="MainImg" alt="">
+        </div>
+
+        <div class="single-prodetails">
+        <h6>Ready Stock</h6>
+        <h4>RFigure 1/8 Raiden Mei - Herrscher of Thunder DX Ver.</h4>
+        <h2>IDR 3,980,000</h2>
+        <input type="number" value="1">
+        <button class="normal">Add To Cart</button>
+        <h4>Products Details</h4>
+        <span>Raiden mei <br> honkai Impact <br> Scaled Figure</span>
+        
+        </div>
+
+    </section>
+
+    <section id="product-1" class="section-p1">
+        <h3>Best Sellers</h3>
+    </section>
+
+    <section id="product-1" class="section-p1">
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='sproduct.html';">
+                <img src="all/hutao-night-lamp.png" alt="">
+                <div class="des">
+                    <span>Ready Stock</span>
+                    <h5>Hu Tao Ghost Night Lamp (15x14cm) - Genshin Impact</h5>
+                    <h4>IDR 580,000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            
+            <div class="pro" onclick="window.location.href='action-figure-sproduct.html';">
+                <img src="all/96215-pvc-figure-17-ganyu-genshin-impact.jpg" alt="">
+                <div class="des">
+                    <span>Ready Stock</span>
+                    <h5>PVC Figure 1/7 Ganyu - Plenilune Gaze Ver. Genshin Impact</h5>
+                    <h4>IDR 2,120,000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='action-figure-sproduct-2.html';">
+                <img src="all/142871-nendoroid-swacchao-levi-ackerman-shingeki-no-kyojin.jpg" alt="">
+                <div class="des">
+                    <span>Ready Stock</span>
+                    <h5>Nendoroid Levi - Shingeki no Kyojin / Attack on Titan (Re-Release)</h5>
+                    <h4>IDR 720,000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="newsletter container">
+        <div class="newsletter--detail">
+            <div class="newsletter--detail_title">Join out weekly newsletter</div>
+            <div class="newsletter--detail_subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus quisquam tempore? Ipsa ullam ducimus harum temporibus amet, ea iste cumque accusamus placeat itaque provident, voluptatem illum repellendus, neque aliquam.</div>
+        </div>
+        <form action="#" class="newsletter--form">
+            <input type="text" class="input--name" placeholder="Name *">
+            <input type="email" class="input--email" placeholder="Email *">
+            <input type="text" class="input--address" placeholder="Address">
+            <textarea name="inputArea" id="inputArea" cols="30" rows="10" class="input--area" placeholder="Tell us something"></textarea>
+            <a href="thankU.html" class="btn btn--submit">Submit</a>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer--grid">
+            <img src="all/thanks.png" alt="logo-dem" class="footer--logo">
+            <div class="footer--list">
+                <div class="footer--list_head">You can find it</div>
+                <p>Jl. Pusponjolo Timur XI No.11A, Bojongsalaman, Kec. Semarang Barat, Kota Semarang, Jawa Tengah 50141</p>
+            </div>
+            <div class="footer--list">
+                <div class="footer--list_head">Contact</div>    
+                <a href="#" class="footer--list_item"><i class="fa-brands fa-whatsapp"></i> 0812-9395-9221</a>
+                <a href="https://discord.gg/vwCyJfRb" class="footer--list_item"><i class="fa-brands fa-discord"></i></a>
+                <a href="#" class="footer--list_item"><i class="fa-solid fa-envelope"></i> eveye@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+
+     <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("smallimg");
+
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            MainImg.src = smallimg[3].src;
+        }
+     </script>
+
+    <script src="js/app.js"></script>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cdf32652ab.js" crossorigin="anonymous"></script>
+    <title>MiShA~chi</title>
+</head>
+<body>
+
+    <navbar class="nav container">
+        <img src="all/logo.png" alt="logo-dem" class="nav--logo">
+        <nav class="nav--link">
+            <a href="index.html" class="nav--link_item">Home</a>
+            <a href="Gallery.html" class="nav--link_item">Gallery</a>
+            <a href="product.html" class="nav--link_item">Products</a>
+            <a href="about.html" class="nav--link_item">About</a>
+            <a href="cart.html" class="nav--link_item active"><i class="fa-solid fa-bag-shopping"></i></a>
+        </nav>
+    </navbar>
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Images</td>
+                    <td>Products</td>
+                    <td>Prices</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><a href=""><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="all/hutao-night-lamp.png" alt=""></td>
+                    <td>Hu Tao Ghost Night Lamp (15x14cm) - Genshin Impact</td>
+                    <td>IDR 580,000</td>
+                    <td><input type="number" value="1"></td>
+                    <td>IDR 580,000</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="all/96215-pvc-figure-17-ganyu-genshin-impact.jpg" alt=""></td>
+                    <td>PVC Figure 1/7 Ganyu - Plenilune Gaze Ver. Genshin Impact</td>
+                    <td>IDR 2,120,000</td>
+                    <td><input type="number" value="1"></td>
+                    <td>IDR 2,120,000</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="fa-regular fa-circle-xmark"></i></a></td>
+                    <td><img src="all/142871-nendoroid-swacchao-levi-ackerman-shingeki-no-kyojin.jpg" alt=""></td>
+                    <td>Nendoroid Levi - Shingeki no Kyojin / Attack on Titan (Re-Release)</td>
+                    <td>IDR 780,000</td>
+                    <td><input type="number" value="1"></td>
+                    <td>IDR 780,000</td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotals</td>
+                    <td>IDR 3.360.000</td>
+
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>IDR 3.360.000</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Checkout</button>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="container footer--grid">
+            <img src="all/thanks.png" alt="logo-dem" class="footer--logo">
+            <div class="footer--list">
+                <div class="footer--list_head">You can find it</div>
+                <p>Jl. Pusponjolo Timur XI No.11A, Bojongsalaman, Kec. Semarang Barat, Kota Semarang, Jawa Tengah 50141</p>
+            </div>
+            <div class="footer--list">
+                <div class="footer--list_head">Contact</div>    
+                <a href="#" class="footer--list_item"><i class="fa-brands fa-whatsapp"></i> 0812-9395-9221</a>
+                <a href="https://discord.gg/vwCyJfRb" class="footer--list_item"><i class="fa-brands fa-discord"></i></a>
+                <a href="#" class="footer--list_item"><i class="fa-solid fa-envelope"></i> eveye@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
